@@ -1,12 +1,12 @@
 [project]
 name = "faster-whisper2"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.2.1"
+description = "faster-whisper2"
 readme = "README.md"
 authors = [
-    { name = "liso", email = "liso@pc.com" }
+    { name = "lisoboss", email = "37949544+lisoboss@users.noreply.github.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "av>=18.0.0",
     "ctranslate2>=4.8.1",
@@ -15,7 +15,7 @@ dependencies = [
     "nvidia-cudnn-cu13>=9.22.0.52",
     "onnxruntime>=1.27.0",
     "tokenizers>=0.23.1",
-    "tqdm<=4.66.5   ",
+    "tqdm<=4.66.5",
 ]
 
 [project.scripts]
