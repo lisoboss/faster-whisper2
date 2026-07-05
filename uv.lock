@@ -146,7 +146,6 @@ dependencies = [
     { name = "ctranslate2" },
     { name = "huggingface-hub" },
     { name = "nvidia-cublas" },
-    { name = "nvidia-cudnn-cu13" },
     { name = "onnxruntime" },
     { name = "tokenizers" },
     { name = "tqdm" },
@@ -164,7 +163,6 @@ requires-dist = [
     { name = "ctranslate2", specifier = ">=4.8.1" },
     { name = "huggingface-hub", specifier = ">=1.22.0" },
     { name = "nvidia-cublas", specifier = ">=13.4.1.1" },
-    { name = "nvidia-cudnn-cu13", specifier = ">=9.22.0.52" },
     { name = "onnxruntime", specifier = ">=1.27.0" },
     { name = "tokenizers", specifier = ">=0.23.1" },
     { name = "tqdm", specifier = "<=4.66.5" },
@@ -407,19 +405,6 @@ wheels = [
     { url = "https://pypi.nvidia.com/nvidia-cuda-nvrtc/nvidia_cuda_nvrtc-13.2.78-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:a9049031da08cbedd0c20e3470e5a978dc330af0e0326b3b05774718c665dc3e" },
     { url = "https://pypi.nvidia.com/nvidia-cuda-nvrtc/nvidia_cuda_nvrtc-13.2.78-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:a50367a7e2a0bd00fb27e5648179149cc7a60e7c7811740a5ff559f06234526d" },
     { url = "https://pypi.nvidia.com/nvidia-cuda-nvrtc/nvidia_cuda_nvrtc-13.2.78-py3-none-win_amd64.whl", hash = "sha256:46aff2df5615c408f23fb968a75e5641060f89fa611a85af51a387dff9bf375b" },
-]
-
-[[package]]
-name = "nvidia-cudnn-cu13"
-version = "9.22.0.52"
-source = { registry = "https://download.pytorch.org/whl/cu130" }
-dependencies = [
-    { name = "nvidia-cublas" },
-]
-wheels = [
-    { url = "https://pypi.nvidia.com/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.22.0.52-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:876406c9abc74314dea03dedb338ac6329cfb41055d9c7873ce9f77fc1651e5f" },
-    { url = "https://pypi.nvidia.com/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.22.0.52-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:7b24277af8cd2e4e5be731f5cf910255105d4b92481999771b99dbffee75d03e" },
-    { url = "https://pypi.nvidia.com/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.22.0.52-py3-none-win_amd64.whl", hash = "sha256:ab6dc11dfd75c7ffed9b17dea3eb9380f68e5e3dc4eebce16fe1eda67135392c" },
 ]
 
 [[package]]
