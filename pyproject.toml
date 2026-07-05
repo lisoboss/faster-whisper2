@@ -1,0 +1,39 @@
+[project]
+name = "faster-whisper2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "liso", email = "liso@pc.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "av>=18.0.0",
+    "ctranslate2>=4.8.1",
+    "huggingface-hub>=1.22.0",
+    "nvidia-cublas>=13.4.1.1",
+    "nvidia-cudnn-cu13>=9.22.0.52",
+    "onnxruntime>=1.27.0",
+    "tokenizers>=0.23.1",
+    "tqdm<=4.66.5   ",
+]
+
+[project.scripts]
+faster-whisper2 = "faster_whisper2:main"
+
+[build-system]
+requires = ["uv_build>=0.11.25,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "transformers[torch]>=2.3.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu130"
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
