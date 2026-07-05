@@ -8,13 +8,13 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
-    "av>=18.0",
+    "av>=18.0.0",
     "ctranslate2>=4.8",
     "huggingface-hub>=1.22",
     "nvidia-cublas>=13",
     "nvidia-cudnn-cu13>=9",
-    "onnxruntime>=1.27",
-    "tokenizers>=0.23",
+    "onnxruntime>=1.27.0",
+    "tokenizers>=0.23.0",
     "tqdm<=4.66",
 ]
 
